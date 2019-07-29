@@ -1,9 +1,16 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Home from './Pages/Home'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    return (
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </Router>
+    )
   }
 }
 
