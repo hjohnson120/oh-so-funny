@@ -18,15 +18,32 @@ body {
 hr {
   width: 300px;
   height: 1px;
-  background-color: black;
+  background-color: rgb(105, 105, 105);
 }
 
 .joke-heading {
   margin-top: 6%;
+  color: rgb(73, 72, 72);
+}
+
+.top-section-flex {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid rgb(105, 105, 105) 1px;
+  background-color: rgb(183, 236, 220);
+  padding: 1%;
+}
+
+.header {
+  color: rgb(73, 72, 72);
+}
+
+.clock {
+  color: rgb(73, 72, 72);
 }
 
 .joke-button:hover {
-  background-color: aqua;
+  background-color: rgb(183, 236, 220);
   color: black;
   border-radius: 8%;
   letter-spacing: 2px;
@@ -41,5 +58,6 @@ hr {
 }
 
 .joke {
+  color: rgb(73, 72, 72);
   margin: 5%;
 }
