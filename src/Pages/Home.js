@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import moment from 'moment'
 
 class Home extends Component {
   render() {
@@ -8,7 +9,9 @@ class Home extends Component {
           <header>
             <h1 className="header">What a Time to be Funny..</h1>
           </header>
-          <h1 className="clock">Clock goes Here</h1>
+          <h1 className="clock">
+            {moment().format('MMMM Do YYYY, h:mm:ss a')}
+          </h1>
         </section>
         <section className="joke-section">
           <h1 className="joke-heading">This is a joke I think..</h1>
